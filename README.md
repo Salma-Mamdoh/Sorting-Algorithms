@@ -19,7 +19,7 @@
     <h2>Results</h2>
     <h3>Insertion sort</h3>
     <p>Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands. It has an average time complexity of O(n^2).</p>
-    <img align="center" width =500 src="https://github.com/Salma-Mamdoh/Sorting--Algorithms/assets/52897508/5bcebbec-c505-4d45-a6da-aca9c4286072).png" alt="Insertion sort plot">
+    <img width =500 src="https://github.com/Salma-Mamdoh/Sorting--Algorithms/assets/52897508/5bcebbec-c505-4d45-a6da-aca9c4286072).png" alt="Insertion sort plot">
     <p>As we can see from the plot, the running time of insertion sort increases drastically as the size of the dataset increases. Therefore, it is not recommended to use insertion sort for large datasets.</p>
     <h3>Selection sort</h3>
     <p>Selection sort is an in-place comparison sorting algorithm that has an average time complexity of O(n^2).</p>
