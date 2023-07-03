@@ -331,6 +331,7 @@ int main() {
     char mincharofarraylist2 = *min_element(arraytest2, arraytest2 + arraytestsize2);
     countingSort(arraytest2, arraytestsize2, mincharofarraylist2, maxcharofarraytest2);
     Print_arr(arraytest2, 6);
-    
+
+	
 
 }
