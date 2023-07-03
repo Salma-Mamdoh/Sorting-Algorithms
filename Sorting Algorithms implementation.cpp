@@ -149,11 +149,11 @@ namespace sortlib {
         }
         return max; //maximum element from the array  
     }
-
-    void countingSort(int arr[], int n, int min, int max) {
+    template<typename T>
+    void countingSort(T arr[], int n, T min, T max) {
         int range = max - min + 1;
-        int* count = new int[range];
-        int* output = new int[n];
+        T* count = new T[range];
+        T* output = new T[n];
         for (int i = 0; i < range; i++) {
             count[i] = 0;
         }
@@ -306,6 +306,31 @@ int main() {
     clock_t end7 = clock();
     double elapsed7 = double(end7 - start7) / CLOCKS_PER_SEC;
     printf("Time measured: %.3f seconds.\n", elapsed7);
+
+    int arraytest[6] = { 1,5,2,8,-1 };
+    //insertion_sort(arraytest, 6);
+    //selection_sort(arraytest, 6);
+    //Bubble_sort(arraytest, 6);
+    //shell_sort(arraytest, 6);
+    //mergeSort(arraytest, 0, 5);
+    //Quicksort(arraytest, 0, 6);
+    int arraytestsize = sizeof(arraytest) / sizeof(arraytest[0]);
+    int maxnumofarraytest = *max_element(arraytest, arraytest + arraytestsize);
+    int minnumofarraylist = *min_element(arraytest, arraytest + arraytestsize);
+    countingSort(arraytest, arraytestsize, minnumofarraylist, maxnumofarraytest);
+    Print_arr(arraytest, 6);
+    char arraytest2[6] = { 'a','o','c','z','b'};
+    //insertion_sort(arraytest2, 6);
+    //selection_sort(arraytest2, 6);
+    //Bubble_sort(arraytest2, 6);
+    //shell_sort(arraytest2, 6);
+    //mergeSort(arraytest2, 0, 5);
+    //Quicksort(arraytest2, 0, 6);
+    int arraytestsize2 = sizeof(arraytest2) / sizeof(arraytest2[0]);
+    char maxcharofarraytest2 = *max_element(arraytest2, arraytest2 + arraytestsize2);
+    char mincharofarraylist2 = *min_element(arraytest2, arraytest2 + arraytestsize2);
+    countingSort(arraytest2, arraytestsize2, mincharofarraylist2, maxcharofarraytest2);
+    Print_arr(arraytest2, 6);
     
 
 }
